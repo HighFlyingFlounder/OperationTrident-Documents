@@ -24,7 +24,7 @@
 - 基本语法：[Basic Syntax](https://www.markdownguide.org/basic-syntax)
 - 扩展语法：
     - [Extended Syntax](https://www.markdownguide.org/extended-syntax)
-    - Markdown支持HTML语法，可以在文件中使用，如本文档用到的页内跳转、[2018.06.02-项目计划.md](planning\\project\\2018.06.02-项目计划.md)中的表格等
+    - Markdown支持HTML语法，可以在文件中使用，如本文档用到的页内跳转、[2018.06.02-项目计划.md](planning/project/2018.06.02-项目计划.md)中的表格等
 
 -----
 
