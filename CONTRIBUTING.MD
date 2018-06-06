@@ -1,11 +1,33 @@
-# 文档规范（v1.0）
+# 文档规范
 
-日期：2018.06.05  
-作者：V3r@M!p
-
-更新日期：  
-作者：  
-更新内容：  
+<table border="1" style="display: table;">
+    <tr>
+        <th>更新日期</th>
+        <th>作者</th>
+        <th>更新内容</th>
+        <th>版本</th>
+    </tr>
+    <tr>
+        <td align="center">2018.06.05</td>
+        <td align="center">V3r@M!p</td>
+        <td>建立文档规范初版</td>
+        <td align="center">v1.0</td>
+    </tr>
+    <tr>
+        <td align="center">2018.06.06</td>
+        <td align="center">V3r@M!p</td>
+        <td>
+            1. 修改<b>书写、命名规范</b>中文件名称的格式
+            <br/>
+            2. 修改更新时需要的记录（使用表格），并制定相应的书写格式
+            <br/>
+            3. 增加Q&A记录规范
+            <br/>
+            4. 增加表格书写规范
+        </td>
+        <td align="center">v1.1</td>
+    </tr>
+</table>
 
 ## 目录
 1. [文件格式](#1-文件格式)
@@ -19,13 +41,67 @@
 - 基本语法：[Basic Syntax](https://www.markdownguide.org/basic-syntax)
 - 扩展语法：
     - [Extended Syntax](https://www.markdownguide.org/extended-syntax)
-    - Markdown支持HTML语法，可以在文件中使用，如本文档用到的页内跳转、[2018.06.02-项目计划.md](planning/project/2018.06.02-项目计划.md)中的表格等
+    - Markdown支持HTML语法，可以在文件中使用，如本文档用到的页内跳转、[项目计划.md](planning/project/项目计划.md)中的表格等
 
 ## 2. 书写、命名规范
 
 - 日期使用 `yyyy.mm.dd` 格式命名
-- 项目管理相关文件名使用 `日期-文件内容.md`格式命名，便于文件系统按日期排序
+- 需要保留多个版本的文件名使用 `日期-文件内容.md` 格式命名，便于文件系统按日期排序，如会议记录等
+- 只需要保留一份最新文档的直接使用 `文件内容.md` 格式命名，如项目计划等
+- 只保留最新的文档需要记录更新信息，简要模板为：
+    ```html
+        <table border="1" style="display: table;">
+            <tr>
+                <th>更新日期</th>
+                <th>作者</th>
+            </tr>
+            <tr>
+                <!-- 实际日期 -->
+                <td align="center">yyyy.mm.dd</td>
+                <!-- 修改人名称 -->
+                <td align="center">name</td>
+            </tr>
+        </table>
+    ```
+    更新时只需要修改 `yyyy.mm.dd` 和 `name` 即可
 - 文件内容格式可参考已有的文件
+- `Q&A` 写在主页的[README.MD](./README.MD)中，日期用 `### 三级标题` ，在相同日期内的 `Q&A` 用 `> 块` 分开，问题使用 `**Q: xxxx**` 加粗
+- 需要使用表格时，使用
+    ```html
+        <table border="1" style="display: table;">
+            <tr>
+                <th>title 1</th>
+                <th>title 2</th>
+                <th>title 3</th>
+                <!-- <th>title x</th> -->
+            </tr>
+            <tr>
+                <td>content 1-1</td>
+                <td>content 1-2</td>
+                <td>content 1-3</td>
+                <!-- <td>content 1-x</td> -->
+            </tr>
+            <tr>
+                <td>content 2-1</td>
+                <td>content 2-2</td>
+                <td>content 2-3</td>
+                <!-- <td>content 2-x</td> -->
+            </tr>
+            <!-- <tr>...</tr> -->
+        </table>
+    ```
+    如需使用跨多行或多列的表格，在 `<td></td>` 标签上添加
+    ```html
+        <!-- 跨x行 -->
+        <td rowspan="x"><td>
+        <!-- 跨x列 -->
+        <td colspan="x"><td>
+    ```
+    `<td></td>` 中需要换行时，添加 `<br/>` 标签  
+    `<td></td>` 中需要加粗内容时，使用 `<b>内容</b>`  
+    `<td></td>` 中需要将内容改变颜色时，使用 `<font color=RGB颜色代码(如#ff0000为红色)>内容</font>`  
+    表格太宽时，参考[2018.06.05-剧情策划.md](planning/game/2018.06.05-剧情策划.md)解决方案，ps：不建议写那么宽的表格
+- 文中引用其他地方的文档时，需要加上链接，方便跳转
 - ...
 
 ## 3. commit
@@ -38,4 +114,16 @@
 
 ## 4. 本文档更新规范
 
-- 在文件开头简要叙述更新信息
+- 更新时，在本文档开头的更新信息记录内增添一栏
+    ```html
+        <tr>
+            <!-- 实际日期 -->
+            <td align="center">yyyy.mm.dd</td>
+            <!-- 修改人名称 -->
+            <td align="center">name</td>
+            <!-- 更新内容简略说明 -->
+            <td>contents</td>
+            <!-- 更新后的版本号，更新一些细节加Y，整个文档重构加X -->
+            <td align="center">vX.Y</td>
+        </tr>
+    ```
