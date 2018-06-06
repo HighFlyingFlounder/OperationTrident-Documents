@@ -1,6 +1,6 @@
 # 文档规范
 
-<table border="1" style="display: table;">
+<table>
     <tr>
         <th>更新日期</th>
         <th>作者</th>
@@ -27,6 +27,14 @@
         </td>
         <td align="center">v1.1</td>
     </tr>
+    <tr>
+        <td align="center">2018.06.07</td>
+        <td align="center">V3r@M!p</td>
+        <td>
+            1. 修改表格书写规范，修改GitHub不支持的语法
+        </td>
+        <td align="center">v1.2</td>
+    </tr>
 </table>
 
 ## 目录
@@ -50,7 +58,7 @@
 - 只需要保留一份最新文档的直接使用 `文件内容.md` 格式命名，如项目计划等
 - 只保留最新的文档需要记录更新信息，简要模板为：
     ```html
-        <table border="1" style="display: table;">
+        <table>
             <tr>
                 <th>更新日期</th>
                 <th>作者</th>
@@ -68,7 +76,7 @@
 - `Q&A` 写在主页的[README.MD](./README.MD)中，日期用 `### 三级标题` ，在相同日期内的 `Q&A` 用 `> 块` 分开，问题使用 `**Q: xxxx**` 加粗
 - 需要使用表格时，使用
     ```html
-        <table border="1" style="display: table;">
+        <table>
             <tr>
                 <th>title 1</th>
                 <th>title 2</th>
@@ -99,8 +107,8 @@
     ```
     `<td></td>` 中需要换行时，添加 `<br/>` 标签  
     `<td></td>` 中需要加粗内容时，使用 `<b>内容</b>`  
-    `<td></td>` 中需要将内容改变颜色时，使用 `<font color=RGB颜色代码(如#ff0000为红色)>内容</font>`  
-    表格太宽时，参考[2018.06.05-剧情策划.md](planning/game/2018.06.05-剧情策划.md)解决方案，ps：不建议写那么宽的表格
+    表格太宽时，可以像[2018.06.05-剧情策划.md](planning/game/2018.06.05-剧情策划.md)一样，分为两个表格  
+    当表格某一列需要占固定大小的宽度时，将该列title `<th></th>` 改为 `<th width="百分比"></th>` 
 - 文中引用其他地方的文档时，需要加上链接，方便跳转
 - ...
 
