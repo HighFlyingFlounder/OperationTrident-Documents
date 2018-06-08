@@ -1,10 +1,14 @@
 # Recoil设计
-
-|       编写日期 | 作者      |
-| ---------: | ------- |
-| 2018.06.08 | ojf1996 |
-
-
+<table>
+    <tr>
+        <th>更新日期</th>
+        <th>作者</th>
+    </tr>
+    <tr>
+        <td align="center">2018.06.08</td>
+        <td align="center">ojf1996</td>
+    </tr>
+</table>
 
 ## 目的
 
