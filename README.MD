@@ -6,7 +6,7 @@
 3. [项目管理相关文档](planning/project/README.MD)
 4. [会议记录](minutes/README.MD)（记录每次会议讨论的内容）
 5. [开发教程](tutorial/README.MD)（实现某个内容的详细步骤，包含美工、程序？）
-6. [接口文档](interface/README.MD)（程序之间需要交互的接口的详细描述，暂无）
+6. [开发文档](development/README.MD)（开发之间沟通所需的文档）
 7. [文档规范](CONTRIBUTING.MD)**（更新文档前先看！！！）**
 
 ## Q&A
