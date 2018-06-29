@@ -7,8 +7,8 @@
     <td align="center"><b>作者</b></td>
   </tr>
   <tr>
-    <td align="center"><b>v0.1</b></td>
-    <td align="center"><b>6.13</b></td>
+    <td align="center"><b>v0.2</b></td>
+    <td align="center"><b>6.29</b></td>
     <td align="center"><b>鸡哥</b></td>
   </tr>
 </table>
@@ -20,3 +20,4 @@
 - <b>Reflection</b>:立方体贴图/reflection probe<br/>
 - <b>light probe</b><br/>
 - <b>bloom</b>:发光物体的泛光（post processing blur+additive blending）<br/>
+- <b>Lens Flare</b>:发光物体的镜头光晕（可以做出很亮的效果)<br/>
